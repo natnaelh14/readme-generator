@@ -8,51 +8,8 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const questions = [
   {
     type: "input",
-    name: "title",
-    message: "What is your Project Title?",
-  },
-  {
-    type: "input",
-    name: "description",
-    message: "Please provide description of your project.",
-  },
-  {
-    type: "input",
-    name: "installation",
-    message: "Please provide a step-by-step Installation instruction",
-  },
-  {
-    type: "input",
-    name: "usage",
-    message: "Please provide a demonstration of your product in use",
-  },
-
-  {
-    type: "input",
-    name: "contribution",
-    message:
-      "Do you want any contribution to your project/ if so, please provide instructions",
-  },
-  {
-    type: "input",
-    name: "tests",
-    message: "Please provide tests for your application",
-  },
-  {
-    type: "input",
-    name: "questions",
-    message: "What do I do if I have an issue?",
-  },
-  {
-    type: "list",
-    name: "license",
-    message: "What license do you want?",
-    choices: ["MIT", "Apache", "GNU AGPLv3", "GNU GPLv3"],
-  },
-  {
-    type: "input",
     name: "github",
-    message: "Please provide GitHub username",
+    message: "What is your GitHub username?",
     validate: async function (input) {
       let githubUrl = `https://api.github.com/users/${input}`;
       try {
@@ -66,8 +23,52 @@ const questions = [
   {
     type: "input",
     name: "email",
-    message: "Please provide GitHub e-mail address",
+    message: "What is your e-mail address?"
   },
+  {
+    type: "input",
+    name: "name",
+    message: "What is your project's name?"
+  },
+  {
+    type: "input",
+    name: "description",
+    message: "Please write a short description of your project."
+  },
+    {
+    type: "list",
+    name: "license",
+    message: "What kind of license should your project have?",
+    choices: ["MIT", "Apache", "GNU AGPLv3", "GNU GPLv3"],
+  },
+  {
+    type: "input",
+    name: "installation",
+    message: "What command should be run to install dependencies?"
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "What command should be run to run tests?",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Please provide a demonstration of your product in use.",
+  },
+
+  {
+    type: "input",
+    name: "contribution",
+    message:
+      "Do you want any contribution to your project/ if so, please provide instructions",
+  },
+
+  {
+    type: "input",
+    name: "questions",
+    message: "What do I do if users have questions?",
+  }
 ];
 
 //Create a function to write README file
