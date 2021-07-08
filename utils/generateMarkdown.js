@@ -91,15 +91,15 @@ limitations under the License.`;
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answer) {
-  let licenseBadge = renderLicenseBadge(answer.License);
-  let licenseLink = renderLicenseLink(data.License);
-  let licenseSection = renderLicenseSection(data.License);
+  let licenseBadge = renderLicenseBadge(answer.license);
+  let licenseLink = renderLicenseLink(answer.license);
+  let licenseSection = renderLicenseSection(answer.license);
 
   return `
-# ${data.title}
+# ${answer.title}
 ${licenseBadge}
 ## Description
-${data.description}
+${answer.description}
 ## Table of Contents
 [Installation](#Installation)
 [Usage](#Usage)
@@ -108,19 +108,19 @@ ${data.description}
 [Tests](#Tests)
 [Questions](#Questions)
 ## Installation
-${data.Installation}
+${answer.installation}
 ## Usage
-${data.Usage}
+${answer.usage}
 ## License
 * Link for more information: ${licenseLink}
 * ${licenseSection}
 ## Contributing
-${data.Contribution}
+${answer.contribution}
 ## Tests
-${data.Tests}
+${answer.tests}
 ## Questions
-* Questions? Visit my GitHub: [${data.questions}](https://github.com/${data.questions}) 
-* With additional questions, feel free to email me at: ${data.email}
+* Questions? Visit my GitHub: [${answer.questions}](https://github.com/${answer.questions}) 
+* With additional questions, feel free to email me at: ${answer.email}
 `;  
 }
 

@@ -9,49 +9,49 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const questions = [
     {
         type: 'input',
-        name: 'Title',
+        name: 'title',
         message: 'What is your Project Title?'
     },
     {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: 'Please provide description of your project.'
     },
     {
         type: 'input',
-        name: 'Installation',
+        name: 'installation',
         message: 'Please provide a step-by-step Installation instruction'
     },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'Please provide a demonstration of your product in use'
     },
 
     {
         type: 'input',
-        name: 'Contribution',
+        name: 'contribution',
         message: 'Do you want any contribution to your project/ if so, please provide instructions'
     },
     {
         type: 'input',
-        name: 'Tests',
+        name: 'tests',
         message: 'Please provide tests for your application'
     },
     {
         type:"input",
-        name:"Questions",
+        name:"questions",
         message:'What do I do if I have an issue?'
     },
     {
         type: 'list',
-        name: 'License',
+        name: 'license',
         message: 'What license do you want?',
         choices: ['MIT', 'Apache', 'GNU AGPLv3', 'GNU GPLv3']
     },
     {
         type: 'input',
-        name: 'GitHub',
+        name: 'github',
         message: 'Please provide GitHub username',
         result: async function(input) {
             let githubUrl = `https://api.github.com/users/${input}`
@@ -65,7 +65,7 @@ const questions = [
     },
     {
         type:'input',
-        name: 'Email',
+        name: 'email',
         message: 'Please provide GitHub e-mail address'
     }
 ];
@@ -73,10 +73,7 @@ const questions = [
 //Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, error => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log("Success! Your README.md file has been generated")
+        error ? console.log(err): console.log('Success! Your README.md file has been generated');
     });
 }
 
