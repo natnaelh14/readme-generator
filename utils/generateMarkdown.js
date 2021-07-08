@@ -45,44 +45,16 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   switch (license) {
     case "Apache":
-      return `Apache License
-      Version 2.0, January 2004
-   http://www.apache.org/licenses/
-TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
-1. Definitions.
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.`;
+      return `This is Apache License documentation`;
       break;
     case "MIT":
-      return `MIT License
-      Copyright (c) [year] [fullname]
-      
-      Permission is hereby granted, free of charge, to any person obtaining a copy
-      of this software and associated documentation files (the "Software"), to deal
-      in the Software without restriction, including without limitation the rights
-      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-      copies of the Software, and to permit persons to whom the Software is
-      furnished to do so, subject to the following conditions:
-      
-      The above copyright notice and this permission notice shall be included in all
-      copies or substantial portions of the Software.
-      
-      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-      SOFTWARE.`;
+      return `This is MIT License documentation`;
       break;
     case "GNU GPLv3":
-      return `GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation, Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed Preamble`;
+      return `This is GNU GPLv3 documentation`;
       break;
     case "GNU AGPLv3":
-      return `GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation, Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed Preamble`;
+      return `This is GNU AGPLv3 documentation`;
       break;
       default:
         "";
@@ -96,31 +68,34 @@ function generateMarkdown(answer) {
   let licenseSection = renderLicenseSection(answer.license);
 
   return `
-# ${answer.title}
+## ${answer.title}
 ${licenseBadge}
 ## Description
 ${answer.description}
 ## Table of Contents
-[Installation](#Installation)
-[Usage](#Usage)
-[License](#Usage)
-[Contributing](#Contribution)
-[Tests](#Tests)
-[Questions](#Questions)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contribution)
+* [Tests](#Tests)
+* [Questions](#Questions)
+* [Contact](#Contact)
 ## Installation
 ${answer.installation}
 ## Usage
 ${answer.usage}
 ## License
-* Link for more information: ${licenseLink}
 * ${licenseSection}
+* For more information: ${licenseLink}
 ## Contributing
 ${answer.contribution}
 ## Tests
 ${answer.tests}
 ## Questions
-* Questions? Visit my GitHub: [${answer.questions}](https://github.com/${answer.questions}) 
-* With additional questions, feel free to email me at: ${answer.email}
+${answer.questions}
+## Contact
+* Email: ${answer.email}
+* GitHub username: ${answer.github}
 `;  
 }
 
