@@ -56,8 +56,8 @@ function renderLicenseSection(license) {
     case "GNU AGPLv3":
       return `This is GNU AGPLv3 documentation`;
       break;
-      default:
-        "";
+    default:
+      "";
   }
 }
 
@@ -68,7 +68,7 @@ function generateMarkdown(answer) {
   let licenseSection = renderLicenseSection(answer.license);
 
   return `
-## ${answer.title}
+## ${answer.name}
 ${licenseBadge}
 ## Description
 ${answer.description}
@@ -80,23 +80,22 @@ ${answer.description}
 * [Tests](#Tests)
 * [Questions](#Questions)
 * [Contact](#Contact)
-## Installation
-${answer.installation}
+## Installation\n
+To run necessary dependencies, run the following command:\n
+* ${answer.installation}
 ## Usage
-${answer.usage}
+* ${answer.usage}
 ## License
 * ${licenseSection}
 * For more information: ${licenseLink}
 ## Contributing
-${answer.contribution}
+* ${answer.contribution}
 ## Tests
-${answer.tests}
+* ${answer.tests}
 ## Questions
-${answer.questions}
+* ${answer.questions}
 ## Contact
-* Email: ${answer.email}
-* GitHub username: ${answer.github}
-`;  
+* You can contact me directly ${answer.email}. You can also find more of my work at (https://github.com/${answer.github}/)`;
 }
 
 module.exports = generateMarkdown;

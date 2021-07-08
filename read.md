@@ -1,29 +1,31 @@
 
 ## Empty Pantry
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 this is a description
 ## Table of Contents
-*[Installation](#Installation)
-*[Usage](#Usage)
-*[License](#License)
-*[Contributing](#Contribution)
-*[Tests](#Tests)
-*[Questions](#Questions)
-*[Contact](#Contact)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contribution)
+* [Tests](#Tests)
+* [Questions](#Questions)
+* [Contact](#Contact)
 ## Installation
-this is an instruction
+
+To run necessary dependencies, run the following command:
+
+this is a dependency
 ## Usage
 this is a demostration
 ## License
-* This is Apache License documentation
-* Link for more information: (http://www.apache.org/licenses/LICENSE-2.0)
+* This is MIT License documentation
+* For more information: (https://opensource.org/licenses/MIT)
 ## Contributing
 this is a contribution
 ## Tests
 this is a test
 ## Questions
-this is an issue
+this is a question
 ## Contact
-* Email: haile.natnael@gmail.com
-* GitHub username: natnaelh14
+* You can contact me directly haile.natnael@gmail.com. You can also find more of my work at (https://github.com/natnaelh14/)
