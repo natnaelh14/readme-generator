@@ -25,10 +25,10 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 * For more information: (https://opensource.org/licenses/MIT)
 ## Contributing
-* fork the project and after making modifications, try to create a pull request
+* if you want to contribute, create a pull request
 ## Tests
 * npm test
 ## Questions
-* if you have any questions, create an issue.
+* if you have any questions, create an issue on the project.
 ## Contact
 * You can contact me directly at haile.natnael@gmail.com. You can also find more of my work at (https://github.com/natnaelh14/)
