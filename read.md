@@ -15,17 +15,17 @@ this is a description
 
 To run necessary dependencies, run the following command:
 
-this is a dependency
+* this is a dependency
 ## Usage
-this is a demostration
+* this is a demostration
 ## License
 * This is MIT License documentation
 * For more information: (https://opensource.org/licenses/MIT)
 ## Contributing
-this is a contribution
+* the is a contribution
 ## Tests
-this is a test
+* this is a test
 ## Questions
-this is a question
+* this is a question.
 ## Contact
 * You can contact me directly haile.natnael@gmail.com. You can also find more of my work at (https://github.com/natnaelh14/)

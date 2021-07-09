@@ -84,7 +84,7 @@ ${answer.description}
 To run necessary dependencies, run the following command:\n
 * ${answer.installation}
 ## Usage
-* ${answer.usage}
+* ![alt text](${answer.usage})
 ## License
 * ${licenseSection}
 * For more information: ${licenseLink}
