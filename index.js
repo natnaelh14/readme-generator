@@ -96,9 +96,9 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Please provide a demonstration of your product in use (jpg, jpeg, mp4, png, gif)",
+    message: "Please provide a demonstration of your product in use (jpg, jpeg, mp4, mov, png, gif)",
     validate: function (answer) {
-      var allowedExtensions = /(\.jpg|\.jpeg|\.mp4|\.png|\.gif)$/i;
+      var allowedExtensions = /(\.jpg|\.jpeg|\.mp4|\.mov|\.png|\.gif)$/i;
       if (!allowedExtensions.exec(answer)) {
         return console.log(" is not a valid file type");
       }
