@@ -23,19 +23,37 @@ const questions = [
   {
     type: "input",
     name: "email",
-    message: "What is your e-mail address?"
+    message: "What is your e-mail address?",
+    validate: function (answer) {
+      if (answer === "") {
+        return console.log("Please enter an email-address.");
+      }
+      return true;
+    },
   },
   {
     type: "input",
     name: "name",
-    message: "What is your project's name?"
+    message: "What is your project's name?",
+    validate: function (answer) {
+      if (answer === "") {
+        return console.log("Please enter a project name.");
+      }
+      return true;
+    },
   },
   {
     type: "input",
     name: "description",
-    message: "Please write a short description of your project."
+    message: "Please write a short description of your project.",
+    validate: function (answer) {
+      if (answer === "") {
+        return console.log("Please enter a project description.");
+      }
+      return true;
+    },
   },
-    {
+  {
     type: "list",
     name: "license",
     message: "What kind of license should your project have?",
@@ -44,17 +62,35 @@ const questions = [
   {
     type: "input",
     name: "installation",
-    message: "What command should be run to install dependencies?"
+    message: "What command should be run to install dependencies?",
+    validate: function (answer) {
+      if (answer === "") {
+        return console.log("Please enter installation instructions.");
+      }
+      return true;
+    },
   },
   {
     type: "input",
     name: "tests",
     message: "What command should be run to run tests?",
+    validate: function (answer) {
+      if (answer === "") {
+        return console.log("Please enter a command for run tests.");
+      }
+      return true;
+    },
   },
   {
     type: "input",
     name: "usage",
     message: "Please provide a demonstration of your product in use.",
+    validate: function (answer) {
+      if (answer === "") {
+        return console.log("Please provide a demonstration of product.");
+      }
+      return true;
+    },
   },
 
   {
@@ -62,13 +98,25 @@ const questions = [
     name: "contribution",
     message:
       "Do you want any contribution to your project/ if so, please provide instructions",
+    validate: function (answer) {
+      if (answer === "") {
+        return console.log("Please provide contribution instructions.");
+      }
+      return true;
+    },
   },
 
   {
     type: "input",
     name: "questions",
     message: "What do I do if users have questions?",
-  }
+    validate: function (answer) {
+      if (answer === "") {
+        return console.log("Please provide instructions for user questions.");
+      }
+      return true;
+    },
+  },
 ];
 
 //Create a function to write README file
