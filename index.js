@@ -84,15 +84,15 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Please provide a demonstration of your product in use.",
+    message: "Please provide a demonstration of your product in use (jpg, jpeg, mp4, png, gif)",
     validate: function (answer) {
-      if (answer === "") {
-        return console.log("Please provide a demonstration of product.");
+      var allowedExtensions = /(\.jpg|\.jpeg|\.mp4|\.png|\.gif)$/i;
+      if (!allowedExtensions.exec(answer)) {
+        return console.log(" is not a valid file type");
       }
       return true;
-    },
+    }
   },
-
   {
     type: "input",
     name: "contribution",
@@ -105,7 +105,6 @@ const questions = [
       return true;
     },
   },
-
   {
     type: "input",
     name: "questions",
