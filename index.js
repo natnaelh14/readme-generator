@@ -61,6 +61,18 @@ const questions = [
   },
   {
     type: "input",
+    name: "owner",
+    message:
+      "Please list the owner/owners of this application.",
+    validate: function (answer) {
+      if (answer === "") {
+        return console.log("PPlease list the owner/owners of this application.");
+      }
+      return true;
+    }
+  },
+  {
+    type: "input",
     name: "installation",
     message: "What command should be run to install dependencies?",
     validate: function (answer) {
@@ -103,7 +115,7 @@ const questions = [
         return console.log("Please provide contribution instructions.");
       }
       return true;
-    },
+    }
   },
   {
     type: "input",
