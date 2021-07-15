@@ -112,7 +112,7 @@ To run necessary dependencies, run the following command:\n
 ![alt text](${answer.usage})
 ## License
 Copyright (C) ${new Date().getFullYear()} ${answer.owner}\n
-${licenseSection}
+* ${licenseSection}
 * For more information: ${licenseLink}
 ## Contributing
 * ${answer.contribution}
